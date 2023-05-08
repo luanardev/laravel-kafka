@@ -28,7 +28,7 @@ Set `kafka` connection after `redis`
 		'driver' => 'kafka',
 		'brokers' => env('KAFKA_BROKERS'),
 		'queue' => env('KAFKA_QUEUE','default'),
-		'subscription' => env('KAFKA_SUBSCRIPTION','default'),
+		'subscribe' => env('KAFKA_SUBSCRIBE','default'),
 		'consumer_group_id' => env('KAFKA_CONSUMER_GROUP_ID','group'),
 		'sasl_username' => env('KAFKA_SASL_USERNAME'),
 		'sasl_password' => env('KAFKA_SASL_PASSWORD'),
@@ -44,7 +44,7 @@ Set `kafka` connection after `redis`
 Add kafka connection details
 ````
 KAFKA_QUEUE=default
-KAFKA_SUBSCRIPTION=default
+KAFKA_SUBSCRIBE=default
 KAFKA_BROKERS=localhost:9092
 KAFKA_SASL_USERNAME=your username
 KAFKA_SASL_PASSWORD=your password
