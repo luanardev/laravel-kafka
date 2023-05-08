@@ -48,9 +48,9 @@ class KafkaQueue extends Queue implements QueueContract
     {
         $brokers = $this->config['brokers'];
         $consumerGroupId= $this->config['consumer_group_id'];
-        $subscription = explode(",", $this->config['subscription']);
+        $subscribe = explode(",", $this->config['subscribe']);
 
-        $topics = array_unique(array_merge($subscription, [$queue]));
+        $topics = array_unique(array_merge($subscribe, [$queue]));
 
         $saslConfig = new Sasl(
             $this->config['sasl_username'],
