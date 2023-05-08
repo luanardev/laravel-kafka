@@ -44,7 +44,7 @@ Set `kafka` connection after `redis`
 Add kafka connection details
 ````
 KAFKA_QUEUE=default
-KAFKA_SUBSCRIPTION=
+KAFKA_SUBSCRIPTION=default
 KAFKA_BROKERS=localhost:9092
 KAFKA_SASL_USERNAME=your username
 KAFKA_SASL_PASSWORD=your password
