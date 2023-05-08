@@ -1,4 +1,8 @@
-# Laravel Kafak
+# Laravel Kafka
+
+## Requirements
+Laravel Kafka requires PHP 8.0+ and Laravel 8+
+This package also requires the rdkafka php extension, which you can install by following this link: https://github.com/edenhill/librdkafka#installation
 
 ## Installation
 
